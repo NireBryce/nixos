@@ -4,14 +4,11 @@
 {
 
 # TODO: make server config
-
-
   home.packages = with pkgs; [    # TODO: figure out which should be modularized for, say, headless machines
     
     # Font config
       (nerdfonts.override { fonts = [ "FiraCode" ]; })
-    # alternative input
-      talon
+    
     # archive                   # archive                                   # archive
       zip                           # zip                                       http://www.info-zip.org/
       unzip                         # unzip                                     http://www.info-zip.org/
@@ -89,6 +86,7 @@
       comma                         # `,` run things without installing them    https://github.com/nix-community/comma
       deadnix                       # scan for dead nix code                    https://github.com/astro/deadnix
       manix                         # nix man pages                             https://github.com/nix-community/manix
+      niv                           # like flakes but worse
       nix-diff                      # diff nix code                             https://hackage.haskell.org/package/nix-diff
       nix-du                        # nix-store analysis                        https://github.com/symphorien/nix-du
       nix-health                    # check nix issues                          https://github.com/juspay/nix-health
